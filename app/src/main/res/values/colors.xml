@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A5C2F0</color>
+    <color name="colorPrimaryDark">#2E1C53</color>
+    <color name="colorAccent">#D79DE4</color>
+    <color name="colorButton">#B45871</color>
+    <color name="colorButton_1">#999999</color>
+    <color name="sendGreen">#4CAF50</color>
+
+    <color name="grey">#bfbfbf</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="link_blue">#3385ff</color>
+    <color name="mainColor">#8497B0</color>
+    <color name="next">#474E72</color>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="profile_photo">
+        <item>@drawable/ic_wc_black_24dp</item>
+        <item>@drawable/ic_local_parking_black_24dp</item>
+        <item>@drawable/ic_smoking_rooms_black_24dp</item>
+        <item>@drawable/ic_add_circle_outline_black_24dp</item>
+    </integer-array>
+    <string-array name="user_names">
+        <item>이은화</item>
+        <item>차중혁</item>
+        <item>김수정</item>
+        <item>이종우</item>
+    </string-array>
+    <integer-array name="posted_photo">
+        <item>@drawable/bathroom</item>
+        <item>@drawable/parking</item>
+        <item>@drawable/smoking</item>
+        <item>@drawable/medical</item>
+    </integer-array>
+    <string-array name="liked_user">
+        <item>이종우. 김경선 외 30명이 좋아합니다.</item>
+        <item>이종우. 김경선 외 30명이 좋아합니다.</item>
+        <item>이종우. 김경선 외 30명이 좋아합니다.</item>
+        <item>이종우. 김경선 외 30명이 좋아합니다.</item>
+    </string-array>
+    <string-array name="posted_text">
+        <item>1일전</item>
+        <item>2일전</item>
+        <item>4일전</item>
+        <item>1시간전</item>
+    </string-array>
+    <string-array name="posted_date">
+        <item>1일전</item>
+        <item>2일전</item>
+        <item>4일전</item>
+        <item>1시간전</item>
+    </string-array>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout1">
+
+        <!-- toolbar -->
+        <include layout="@layout/toolbar_next"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Tmap 지도 -->
+            <LinearLayout
+                android:id="@+id/map_plan"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:maxHeight="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="여행스타일"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/spin_travelType"
+                style="?android:attr/spinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:popupBackground="@android:color/background_light"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spin_itinerary"
+                style="?android:attr/spinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:autofillHints=""
+                android:popupBackground="@android:color/background_light"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spin_travelMember"
+                style="?android:attr/spinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:popupBackground="@android:color/background_light"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spin_transport"
+                style="?android:attr/spinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:popupBackground="@android:color/background_light"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="예상 비용"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btn_cost_plan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_tourist_map"
+                android:gravity="right"
+                android:text="여행비용"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="여행코스"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/btn_course_add_plan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_add_black_24dp"
+                android:background="@drawable/btn_tourist_map"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="내용"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_circle_while_bg">
+
+                <EditText
+                    android:id="@+id/et_travelReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/user_post_plan_hint"
+                    android:maxLength="140"
+                    android:minLines="6"
+                    android:padding="10dp"
+                    android:textColorHint="#BDBDBD"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

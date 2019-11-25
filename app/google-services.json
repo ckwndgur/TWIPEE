@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "711691018771",
+    "firebase_url": "https://twipee-test.firebaseio.com",
+    "project_id": "twipee-test",
+    "storage_bucket": "twipee-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711691018771:android:5098453ccc0d5b232255e6",
+        "android_client_info": {
+          "package_name": "com.nslb.twipee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711691018771-p63uoe7cp2lrmbd59ijg9c8ltibbv9ni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nslb.twipee",
+            "certificate_hash": "fb51df582e64a53279145841295afc9df7fc76a0"
+          }
+        },
+        {
+          "client_id": "711691018771-dvdo829sqcce69k4fs4cdsvv7ck5g2m3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3ksC1BOvpbHOr5arpafrjrwRj6du53kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711691018771-dvdo829sqcce69k4fs4cdsvv7ck5g2m3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

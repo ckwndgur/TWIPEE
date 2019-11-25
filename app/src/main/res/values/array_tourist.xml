@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="resld_tourist">
+        <item>@drawable/gueongju_0</item>
+        <item>@drawable/gueongju_0</item>
+        <item>@drawable/gueongju_0</item>
+
+    </integer-array>
+    <string-array name="nearposition">
+        <item>경주월드</item>
+        <item>첨성대</item>
+        <item>불국사</item>
+
+    </string-array>
+    <string-array name="nearposition_detail">
+        <item>경주어쩌고</item>
+        <item>경주어쩌고</item>
+        <item>경주어쩌고</item>
+
+
+    </string-array>
+    <string-array name="distance">
+        <item>530m</item>
+        <item>1.53km</item>
+        <item>2.35km</item>
+
+    </string-array>
+</resources>

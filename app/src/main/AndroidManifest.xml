@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nslb.twipee">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Beacon -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Camera & Gallery -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+
+        <activity android:name=".triptalk.ChattingActivity" /> <!-- URL Connection -->
+        <activity
+            android:name=".TripTalkBoard"
+            android:label="@string/near_board"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".near.Near_Search"
+            android:label="@string/title_activity_trip_talk_board"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".board.BoardWrite"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".board.BoardComment"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".near.Near_Tourist"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".near.Near_B"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".near.Near_P"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".near.Near_M"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".near.Near_S"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.PostWrite"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.PostReview"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.OtherUserInfo"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.PostCost"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.PostCourse"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.PlanWrite"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.PlanCost"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.main.TripTalkUserView"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.PlanCostPlus"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.PostCostPlus"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.SetUp"
+            android:label="@string/near_tourist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.PostGetImage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sns.SNS_Search"
+            android:label="@string/title_activity_SNS_feed_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".login.Login_1" />
+        <activity android:name=".login.Login_Button" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".User.MyStepService"
+            android:enabled="true"></service>
+        <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
+
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
+        <activity android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/AK_LOGIN_PROTOCOL_SCHEME" />
+            </intent-filter>
+        </activity><!-- Beacon -->
+        <service android:name="com.minew.beacon.ScanService" />
+        <receiver android:name="com.minew.beacon.BluetoothChangedReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="com.nslb.twipee.MyStepService"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

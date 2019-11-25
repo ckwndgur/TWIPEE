@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="imageUser">
+        <item>@drawable/ic_person_black_24dp</item>
+        <item>@drawable/ic_person_black_24dp</item>
+        <item>@drawable/ic_person_black_24dp</item>
+    </integer-array>
+    <string-array name="username_comment">
+        <item>효림</item>
+        <item>수정</item>
+        <item>중혁</item>
+    </string-array>
+    <string-array name="time_comment">
+        <item>2019.09.19 오후 9;21</item>
+        <item>2019.09.18 오후 4:19</item>
+        <item>2019.09.18 오후 2:01</item>
+    </string-array>
+    <string-array name="comment">
+        <item>빌리고 싶어요.</item>
+        <item>빌리구싶은데 연락주세욤.</item>
+        <item>^ㅡ^</item>
+    </string-array>
+
+</resources>

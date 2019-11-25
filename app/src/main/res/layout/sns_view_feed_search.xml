@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_feedSearchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="48dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edittext_feedSearchBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="검색"
+            android:maxLines="6" />
+
+        <Button
+            android:id="@+id/button_feedSearch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:text="취소"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="#dfdfdf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="정렬"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/btn_align1"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="최신순"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+            <Button
+                android:id="@+id/btn_align2"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="인기순"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+            <Button
+                android:id="@+id/btn_align3"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="낮은경비순"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btn_align4"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="높은경비순"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+            <Button
+                android:id="@+id/btn_align5"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="짧은경로순"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+            <Button
+                android:id="@+id/btn_align6"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="긴경로순"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="35dp"
+        android:background="#dfdfdf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="여행 경비"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="10,000 이상 ~ 1,000,000 이하"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seek_travelExpenses"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="35dp"
+            android:background="#dfdfdf"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="선택"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/btn_choice1"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="당일치기"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+            <Button
+                android:id="@+id/btn_choice2"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="맛집"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+            <Button
+                android:id="@+id/btn_choice3"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="숙박"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btn_choice4"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="홀로여행"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+            <Button
+                android:id="@+id/btn_choice5"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="단체여행"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+            <Button
+                android:id="@+id/btn_choice6"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="가족여행"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btn_choice7"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="커플여행"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+            <Button
+                android:id="@+id/btn_choice8"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="우정여행"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+            <Button
+                android:id="@+id/btn_choice9"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="현장학습"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btn_choice10"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="편의시설"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+            <Button
+                android:id="@+id/btn_choice11"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="체험/놀이"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+            <Button
+                android:id="@+id/btn_choice12"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="축제"
+                android:textSize="12sp"
+                android:background="@drawable/btn_neartype"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

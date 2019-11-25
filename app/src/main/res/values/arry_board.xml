@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="resld_user_image">
+        <item>@drawable/ic_person_black_24dp</item>
+        <item>@drawable/ic_person_black_24dp</item>
+        <item>@drawable/ic_person_black_24dp</item>
+    </integer-array>
+    <string-array name="user_name">
+        <item>효림</item>
+        <item>수정</item>
+        <item>중혁</item>
+    </string-array>
+    <string-array name="day">
+        <item>2019.09.19 오후 9;21</item>
+        <item>2019.09.18 오후 4:19</item>
+        <item>2019.09.18 오후 2:01</item>
+    </string-array>
+    <string-array name="content_board">
+        <item>빌려드립니다.</item>
+        <item>빌려드립니다.</item>
+        <item>빌려드립니다.</item>
+    </string-array>
+    <integer-array name="board_image">
+        <item>@drawable/gueongju_0</item>
+        <item>@drawable/gueongju_0</item>
+        <item>@drawable/gueongju_0</item>
+    </integer-array>
+    <string-array name="content_image">
+        <item>https://firebasestorage.googleapis.com/v0/b/twipee-test.appspot.com/o/image%2F20150831114934_9bcf1005.png?alt=media&amp;token=1fc0f70f-2e25-487a-9897-1fd3f99a18ab</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/twipee-test.appspot.com/o/image%2Fimage1.png?alt=media&amp;token=77bd3f07-653e-488a-b1d9-6c3a845de1bf</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/twipee-test.appspot.com/o/image%2FRYAN_M.jpg?alt=media&amp;token=0df80cef-bdea-4aa5-b790-be3b0364fb85</item>
+    </string-array>
+</resources>
